@@ -11,7 +11,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.questapi_per12.ui.navigation.PengelolaHalaman
 import com.example.questapi_per12.ui.theme.QuestApi_per12Theme
+import com.example.questapi_per12.ui.viewmodel.MahasiswaApp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,8 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             QuestApi_per12Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    MahasiswaApp(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
